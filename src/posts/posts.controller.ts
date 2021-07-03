@@ -43,7 +43,7 @@ export class PostsController {
 
   @Put('publish/:id')
   publishPost(@Param('id') id: string) {
-    return this.postsService.update(+id, {});
+    return this.postsService.update(+id, { published: true });
   }
 
   @Delete(':id')
