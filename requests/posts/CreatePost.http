@@ -1,0 +1,9 @@
+POST http://localhost:3000/posts
+Content-Type: application/json
+
+{
+  "title": "CRUD automático com NestJS e Prisma",
+  "content": "Aprenda a fazer um CRUD automático com NestJS e Prisma",
+  "published": true,
+  "authorId": 1
+}
